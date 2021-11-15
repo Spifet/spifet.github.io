@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: starterFont;
+  src: url('fonts/Fruktur-Regular.woff') format('woff');
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  height: 100vh;
+}
+
+/*This makes the font to apply to the entire website*/
+head body{
+  font-family: starterFont;
+}
+
+.card {
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+h1{
+  font-size: 34px;
+ 
+}
+
+h2{
+  font-size: 20px;
+  margin-top: -1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none; 
+}
