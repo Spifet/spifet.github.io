@@ -89,25 +89,51 @@
     margin-bottom: 5rem;
   }
 
+  iframe{
+      margin-left: 25px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  .gallery-img {
+    display: none;
+    max-height: 600px;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  /*.gallery-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    background-color: #0074d9;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    margin-right: 15px;
+  }
+  
+  .btn:disabled {
+    background-color: transparent;
+  }*/
 
 
   footer {
