@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: starterFont;
+    src: url('fonts/Fruktur-Regular.woff') format('woff');
+  }
+  
+  body {
+    background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+    margin-left:0;
+  }
+  
+  /*This makes the font to apply to the entire website*/
+  head body{
+    font-family: starterFont;
+  }
+
+  nav {
+    position:fixed; /* Position of nav becomes fixed*/
+    top: 0%;
+    height: 2rem;
+    width: 100%; /*Nav is width as the webpage*/
+    background-color: lightgray;
+    font-size: 18px;
+    border-bottom: 4px solid silver;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 5px;
+  
+  }
+  
+  nav li:hover{
+    transform: scale(1.1);
+  }
+  
+  nav a {
+    text-decoration: none; 
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .current{
+    text-decoration: underline;
+    font-size:20px;
+  }
+
+  #living{
+      margin: 0 auto;
+      width: 80%;
+  }
+
+  #info{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #topdiv{
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+  }
+
+  h2 {
+      margin-bottom: 0;
+      padding:0;
+      margin-left: 22.5px;
+  }
+  p{
+    margin-top: 5px;
+    margin-left: 23px;
+    padding:0;
+  }
+  .livingh2{
+    margin-top: -3rem;
+    
+  }
+
+  .livingp{
+    margin-bottom: 5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    background-color: lightgray;
+    width: 100%;
+    height: 3.9rem;
+    border: 3px double silver;
+  }
+  
+  #footerSentence{
+    margin:0;
+    padding:0;
+    word-wrap: wrap;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  footer p{
+    margin:0;
+    padding:0;
+  }

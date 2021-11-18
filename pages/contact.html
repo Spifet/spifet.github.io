@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Contact Form</title>
+	<link href="../css/contact.css" rel="stylesheet">
 </head>
 <body>
-    <div>Contact Page</div>
+	<nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="current" href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+	<div class="wrapper">
+		<section>
+			<h1>Contact Form</h1>
+			<p>Contact me by filling the form below and I will be back to you shortly.</p>
+			<form action="https://formspree.io/f/xknkdvvb" method="POST">
+				<input type="hidden" value="jei.cohen@gmail.com">
+			<fieldset>
+				<legend>Contact details</legend>
+					<label for="firstName" >First name*</label>
+					<input type="text" id="firstName" name="firstName" required>
+					<label for="lastName">Last name</label>
+					<input type="text" id="lastName" name="lastName">
+					<label for="email" >E-mail*</label>
+					<input type="email" id="email" name="email" required>
+					<label for="gmt" >What's your GMT?*</label>
+					<input type="number" id="gmt" name="gmt" min="-12" max="14" required>
+
+					<p>How urgent you require a response:</p>
+						<label>
+							<input type="radio" name="urgency" value="veryUrgent" id="radio"> As soon as possible
+						</label>
+						<label>
+							<input type="radio" name="urgency" value="Urgent" id="radio"> Soon
+						</label>
+						<label>
+							<input type="radio" name="urgency" value="notUrgent" id="radio" checked> Timeless
+						</label>
+
+					<label for="reason">What's the reason you're contacting me?</label>
+						<select id="reason" name="reason">
+							<option value="job">Make me a job offer</option>
+							<option value="freelance">Make me a freelance offer</option>
+							<option value="other" selected>Other</option>
+						</select> 
+					<label for="comments">Comments or business proposition*:</label>
+					<textarea id="comments" name="comments" placeholder="Type your message here..." required></textarea>
+					<button type="submit" id="submit" disabled>Submit</button> 
+			</fieldset>	
+			
+			</form>			
+		</section>
+
+	</div>
+	<footer>
+		<p>&#169; Created by Jei Cohen.</p>
+		<div><a href="../index.html">Home</a>
+		<a href="./about.html"> About</a>
+		<a href="./contact.html">Contact</a></div>
+		<div id="footerSentence"></div><p>
+	</footer>
+	<script src="../js/contact.js"></script>
+	<script src="../js/footer.js"></script>
 </body>
 </html>
+
+
+
+
+
